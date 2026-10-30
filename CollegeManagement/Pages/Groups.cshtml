@@ -1,0 +1,9 @@
+@page
+@model CollegeManagement.Pages.GroupsModel
+@{
+    ViewData["Title"] = "Учебные группы";
+}
+<h1>Учебные группы</h1>
+<div class="row">
+@foreach (var group in Model.Groups) { <div class="col-md-4"><div class="card mb-3"><div class="card-body"><h5>@group.Name</h5><p class="mb-0">Курс: @group.Course</p></div></div></div> }
+</div>

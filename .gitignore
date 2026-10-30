@@ -1,0 +1,19 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## .NET build output
+**/bin/
+**/obj/
+
+## Local database
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+## Local secrets and environment files
+appsettings.Local.json
+
+## Temporary files
+*.tmp

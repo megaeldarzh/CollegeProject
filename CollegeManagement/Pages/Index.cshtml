@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="py-4">
+    <div class="p-5 mb-4 bg-primary text-white rounded-3 shadow-sm">
+        <h1 class="display-5 fw-bold">College Management</h1>
+        <p class="lead mb-0">Информационная система управления колледжем</p>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-4"><a class="text-decoration-none" asp-page="/Students"><div class="card h-100 shadow-sm"><div class="card-body"><h2 class="h5">Студенты</h2><p class="text-muted mb-0">Список студентов и учебных групп.</p></div></div></a></div>
+        <div class="col-md-4"><a class="text-decoration-none" asp-page="/Grades"><div class="card h-100 shadow-sm"><div class="card-body"><h2 class="h5">Электронный журнал</h2><p class="text-muted mb-0">Оценки и успеваемость.</p></div></div></a></div>
+        <div class="col-md-4"><a class="text-decoration-none" asp-page="/Attendance"><div class="card h-100 shadow-sm"><div class="card-body"><h2 class="h5">Посещаемость</h2><p class="text-muted mb-0">Контроль посещения занятий.</p></div></div></a></div>
+    </div>
+</div>

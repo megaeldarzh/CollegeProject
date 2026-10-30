@@ -1,0 +1,8 @@
+@page
+@model CollegeManagement.Pages.AdminModel
+@{
+    ViewData["Title"] = "Административная панель";
+}
+<h1>Административная панель</h1>
+<div class="alert alert-success">@Model.Message</div>
+<ul><li><a asp-page="/Students">Управление студентами</a></li><li><a asp-page="/Teachers">Управление преподавателями</a></li><li><a asp-page="/Groups">Управление группами</a></li><li><a asp-page="/Grades">Электронный журнал</a></li><li><a asp-page="/Attendance">Посещаемость</a></li></ul>

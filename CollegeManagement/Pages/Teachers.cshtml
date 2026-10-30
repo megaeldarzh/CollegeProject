@@ -1,0 +1,9 @@
+@page
+@model CollegeManagement.Pages.TeachersModel
+@{
+    ViewData["Title"] = "Преподаватели";
+}
+<h1>Преподаватели</h1>
+<table class="table"><thead><tr><th>ФИО</th><th>Предмет</th><th>Стаж</th></tr></thead><tbody>
+@foreach (var teacher in Model.Teachers) { <tr><td>@teacher.GetTeacherInfo().Split(", предмет:")[0]</td><td>@teacher.Subject</td><td>@teacher.Experience лет</td></tr> }
+</tbody></table>

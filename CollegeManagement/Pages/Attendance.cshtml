@@ -1,0 +1,9 @@
+@page
+@model CollegeManagement.Pages.AttendanceModel
+@{
+    ViewData["Title"] = "Посещаемость";
+}
+<h1>Посещаемость</h1>
+<table class="table"><thead><tr><th>Студент</th><th>Всего занятий</th><th>Присутствовал</th><th>Процент</th></tr></thead><tbody>
+<tr><td>Иван Петров</td><td>@Model.Statistics.Total</td><td>@Model.Statistics.Present</td><td>@Model.Statistics.Percentage%</td></tr>
+</tbody></table>

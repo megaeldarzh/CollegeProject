@@ -1,0 +1,12 @@
+@page
+@model CollegeManagement.Pages.LoginModel
+@{
+    ViewData["Title"] = "Авторизация";
+}
+<h1>Авторизация</h1>
+<form method="post" class="col-md-6">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="mb-3"><label asp-for="Login" class="form-label"></label><input asp-for="Login" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Password" class="form-label"></label><input asp-for="Password" class="form-control" type="password" /></div>
+    <button class="btn btn-primary" type="submit">Войти</button>
+</form>

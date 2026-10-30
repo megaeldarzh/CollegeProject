@@ -1,0 +1,9 @@
+@page
+@model CollegeManagement.Pages.StudentsModel
+@{
+    ViewData["Title"] = "Студенты";
+}
+<h1>Студенты</h1>
+<table class="table"><thead><tr><th>ФИО</th><th>Возраст</th><th>Группа</th></tr></thead><tbody>
+@foreach (var student in Model.Students) { <tr><td>@student.Name @student.Surname</td><td>@student.Age</td><td>@student.Group</td></tr> }
+</tbody></table>
